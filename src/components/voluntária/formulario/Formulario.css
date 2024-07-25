@@ -1,0 +1,47 @@
+.questionary-page {
+    background: #F2E1E9;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.questionary-page h1 {
+    font-family: Yrsa;
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.questionary-page hr {
+    width: 100%;
+    top: 90px;
+    left: 14px;
+    border: 1px 0px 0px 0px;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.questionary-box {
+    max-width: 629px; 
+    width: 90%;
+}
+
+.questionary-selection p {
+    font-family: Tenor Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17.55px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.questionary-selection label{
+    color: rgba(0, 0, 0, 0.568);
+}
+
+/* Media query para ajustes em tamanhos de tela menores */
+@media screen and (max-width: 768px) {
+    .questionary-selection p {
+        font-size: 16px; /* Reduzido ainda mais o tamanho da fonte para telas muito pequenas */
+    }
+}

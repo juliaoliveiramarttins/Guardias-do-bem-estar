@@ -1,0 +1,45 @@
+
+.loading-box {
+    background-image: url('/src/assets/img/sakura-background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo {
+    width: 220px;
+    height: 173px;
+    opacity: 0; 
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries - Responsividade */
+@media (max-width: 768px) {
+    .loading-box {
+        align-items: center; /* Centraliza verticalmente em telas menores */
+    }
+
+    .logo {
+        width: 70vw; /* Aumenta a largura da logo para 70% da largura da tela */
+        max-width: 180px; /* Limita a largura máxima a 180px */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80vw; /* Aumenta a largura da logo para 80% da largura da tela */
+        max-width: 150px; /* Limita a largura máxima a 150px */
+    }
+}

@@ -1,0 +1,96 @@
+.volunteering {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar verticalmente */
+    flex-direction: column;
+    background: #eebbd38a;
+    height: 100%; /* Alterado para 100% para ocupar toda a altura da tela */
+}
+
+.volunteering-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 80%;
+    text-align: center; /* Adicionado para centralizar texto */
+}
+
+.volunteering-description h1 {
+    font-family: Yrsa;
+    font-size: 30px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.volunteering-description h2 {
+    font-family: Yrsa;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.volunteering-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.volunteering-cards-accepted,
+.volunteering-cards-rejected {
+    background: #EEBBD3;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    width: 80%; /* Alterado para 80% */
+    max-width: 330px; /* Adicionado máximo de largura */
+}
+
+.volunteering-cards-accepted img,
+.volunteering-cards-rejected img {
+    width: 80px;
+    height: 80px;
+}
+
+.volunteering-cards-accepted a,
+.volunteering-cards-rejected a {
+    font-family: Yrsa;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.volunteering-cards-accepted a::after,
+.volunteering-cards-rejected a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.466);
+    transition: width 0.3s ease;
+}
+
+.volunteering-cards-accepted a:hover::after,
+.volunteering-cards-rejected a:hover::after {
+    width: 100%;
+}
+
+/* Media queries para ajustes em tamanhos de tela menores */
+@media screen and (max-width: 768px) {
+    .volunteering-description {
+        width: 90%;
+    }
+    
+    .volunteering-cards-accepted,
+    .volunteering-cards-rejected {
+        width: 90%;
+    }
+}

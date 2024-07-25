@@ -1,0 +1,91 @@
+.credit-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F2E1E9;
+}
+
+.credit-success p {
+    font-family: Thabit;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;    
+    color: #333;
+}
+
+.credit-success h1 {
+    font-family: STIX Two Text;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    
+}
+
+.credit-success img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    background-image: url("../../../img/icones/voluntario/creditIcon.png")
+}
+
+.credit-success button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #FF94D5;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: none;
+}
+
+.credit-success button:hover {
+    background: #fa7fc9;
+}
+
+/* Adicione isso ao final do arquivo */
+
+@media (max-width: 768px) {
+    .credit-success p {
+        font-size: 24px;
+    }
+
+    .credit-success h1 {
+        font-size: 28px;
+    }
+
+    .credit-success img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .credit-success button {
+        padding: 8px 16px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .credit-success p {
+        font-size: 20px;
+    }
+
+    .credit-success h1 {
+        font-size: 24px;
+    }
+
+    .credit-success img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .credit-success button {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+}
+

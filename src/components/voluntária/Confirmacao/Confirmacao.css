@@ -1,0 +1,75 @@
+.confirmacao {
+    background: #F2E1E9;
+    min-height: 100vh;
+}
+
+.confirmacao p {
+    font-family: Yrsa;
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.confirmacao hr{
+    width: 50%;
+}
+
+.confirmacao h1 {
+    font-family: Yrsa;
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.confirmacao-box  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmacao-box img {
+    height: 150px;
+    width: 150px;
+    z-index: 10;
+    position: relative;
+    top: 15px;
+}
+
+.confirmacao-textbox {
+    background: #EEBBD380;
+    width: 80%; 
+    max-width: 500px;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.confirmacao-textbox p {
+    font-family: Tenor Sans;
+    margin: 15px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+/* Media query para ajustes em tamanhos de tela menores */
+@media screen and (max-width: 768px) {
+    .confirmacao p, .confirmacao h1 {
+        font-size: 22px; /* Reduzido o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+
+    .confirmacao-textbox p {
+        font-size: 18px; /* Reduzido o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+
+    .confirmacao hr {
+        width: 80%; /* Alterado para 80% para ajustar em telas menores */
+    }
+}

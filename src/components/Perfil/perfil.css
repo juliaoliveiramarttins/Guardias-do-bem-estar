@@ -1,0 +1,166 @@
+/* Estilos gerais */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Página de perfil */
+.profilePage {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.userProfile {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.profileHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.userDetails {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userIdentity {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.userIdentity img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 15px;
+}
+
+.userIdentity h1 {
+    font-family: Yrsa;
+    margin: 15px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.ProfileOverview {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ProfileOverview h3 {
+    font-family: Yrsa;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.userInfo {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    color: black;
+}
+
+.userBio {
+    font-family: Yrsa;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+.profileEdit button {
+    margin: 10px;
+    height: 27px;
+    background: #f3b2d6;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+    font-family: Yrsa;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profileEdit button:hover {
+    margin: 10px;
+    height: 27px;
+    background: #f3b2d6;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+    font-family: Yrsa;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Grade de posts do usuário */
+.userGrid {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.postGridContent {
+    height: 450px;
+    width: calc(50% - 20px); /* Faz com que cada post ocupe 50% da largura do container */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+    background-color: rgba(8, 8, 8, 0.096);
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.postGridContent img {
+    margin: 15px;
+    max-width: 300px; /* Imagem ocupará 100% da largura do container pai */
+    height: auto; /* Manter proporção da imagem */
+    border-radius: 8px;
+}
+
+.postGridContent p {
+    font-family: Yrsa;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    color: black;
+    word-wrap: break-word; 
+}
+
+/* Consultas de mídia para responsividade */
+@media (max-width: 767px) {
+    .postGridContent {
+        width: calc(100% - 20px); /* Ajusta a largura para que apenas um post fique por linha em telas pequenas */
+    }
+}

@@ -1,0 +1,201 @@
+.cadastro-usuario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F2E1E9;
+
+}
+
+.cadastro-usuario-box {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+}
+
+.cadastro-usuario-form {
+  text-align: center;
+  max-width: 100%; 
+}
+
+.cadastro-usuario-form h1 {
+  margin: 5px;
+  background: #EEBBD3AB;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 100%; 
+}
+
+
+.form-group {
+  margin: 5px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.705);
+
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ffffffbd;
+  color: rgba(0, 0, 0, 0.705);
+
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 22px); 
+
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px 30px 10px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  appearance: none;
+  background-color: #ffffffbd;
+  color: rgba(0, 0, 0, 0.644);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Adicionando a imagem da seta */
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+}
+
+
+.form-group-box{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.form-group-box .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.btnCancel {
+  font-family: Yrsa;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+
+
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #810909;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.btnSubmit {
+  font-family: Yrsa;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #E0A3C7;
+  color: rgba(0, 0, 0, 0.842);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+  /* RESPONSIVIDADE */
+
+/* Estilos responsivos para dispositivos grandes */
+@media (min-width: 1025px) {
+  .cadastro-usuario-box {
+    width: 40%;
+  }
+
+  .cadastro-usuario-form h1 {
+    font-size: 35px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 18px;
+  }
+
+  .btnCancel,
+  .btnSubmit {
+    font-size: 27px;
+  }
+}
+
+/* Estilos responsivos para dispositivos médios (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cadastro-usuario-box {
+    width: 60%;
+  }
+
+  .cadastro-usuario-form h1 {
+    font-size: 28px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 16px;
+  }
+
+  .btnCancel,
+  .btnSubmit {
+    font-size: 23px;
+  }
+}
+
+/* Estilos responsivos para dispositivos pequenos (celulares) */
+@media (max-width: 767px) {
+  .cadastro-usuario-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .cadastro-usuario-form h1 {
+    font-size: 24px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .btnCancel,
+  .btnSubmit {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  .form-group-box {
+    flex-direction: column;
+  }
+
+  .form-group-box .form-group {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
